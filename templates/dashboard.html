@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>When Should I Leave?- Lifehack for the public transport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3ED0Cuwjvlwl0zONVG-byrSiHUwmCWeU&libraries=places"></script>
+</head>
+<body>
+<div style="left:0;top:0;position:absolute;width:100%;height:80px;">
+    <a href="/" style="color:inherit;text-decoration: none;">
+        <img style="height:50px;left:16px;top:5px;position:absolute;" src="../static/logo.jpg"/>
+        <span style="font-size:15px;left:10px;top:51px;position:absolute;">Lifehack for the public transport</span>
+        <span style="font-size:47px;left:70px;top:0;position:absolute;margin-top:-5px;">When Should I Leave?</span>
+{#        <span style="font-size:25px;left:230px;top:2px;position:absolute;margin-top:-5px;">alpha</span>#}
+    </a>
+</div>
+<div class="container jumbotron" style="margin-top:80px;">
+  <h2>Find your exit</h2>
+    Use precise locations for better results(Boltzmannstrasse 3 instead of Boltzmannstrasse)<br> <br>
+  <form action="../transit"  method="post" class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2">Origin:</label>
+      <div class="col-sm-10">
+        <input  name="source" id="source" class="form-control" placeholder="Where are you?" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Destination:</label>
+      <div class="col-sm-10">
+        <input name="destination" id="destination" class="form-control" placeholder="Where do you want to go?" required>
+      </div>
+    </div>
+      <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" onclick="reverseFields()" class="btn btn-default">Reverse Directions</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+    function init() {
+        var source = document.getElementById('source');
+        var dest = document.getElementById('destination');
+        var autocompletesrc = new google.maps.places.Autocomplete(source);
+        var autocompletedest = new google.maps.places.Autocomplete(dest);
+    }
+    google.maps.event.addDomListener(window, 'load', init);
+    function reverseFields(){
+        var source = document.getElementById('source').value;
+        var dest = document.getElementById('destination').value;
+        console.log(source,dest)
+        document.getElementById("source").value = dest;
+        document.getElementById("destination").value = source;
+    }
+</script>
+</body>
+</html>
+

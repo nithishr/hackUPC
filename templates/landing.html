@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>When Should I Leave?</title>
+  <meta charset="utf-10">
+  <meta name="viewport" content="width=device-width, initial-scale=23">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <!<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap.css"/>
+<style>
+.table-responsive {
+overflow-x: hidden;
+}
+@media (max-width: 800px) {
+.table-responsive {
+overflow-x: auto;
+}
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3ED0Cuwjvlwl0zONVG-byrSiHUwmCWeU&libraries=places"></script>
+
+
+  <!for the table>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <style>
+  body {
+     background-color:  #ffcc00;
+     font: px Pacifico, sans-serif; justify-content:
+     text-center;
+      line-height: 2;
+      color:  #1a1400;
+      margin-bottom: 0px;
+  }
+  h2 { font-size: 30px;
+      color: #ffcc00;
+       line-height: 0.375em;
+      font-weight: 600;
+      margin-bottom: 10px;
+       }
+  h3 { font-size: 20px;
+       font-weight: 100;
+        line-height: 0.5em;
+      margin-bottom: 0px;
+       }
+
+   h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  h6{
+    font-size: 13px;
+    line-height: 1.8em;
+    margin-left: 140px;
+    margin-right: 140px;
+
+  	}
+  .jumbotron {
+      background-color:#f4511e;
+      color: #fff;
+      margin-top: 50px;
+      padding: 20px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 25px;}
+  .margin {margin-left: 20px}
+  .margin {margin-right: 20px}
+
+  .bg-1 {
+      background-color: #1abc9c ; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #19706d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #474e5d ; /* White */
+      color: #ffffff;
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #ffffff;
+  }
+  .container-fluid {
+      padding-top: 30px;
+      padding-bottom: 40px;
+  }
+  }
+  .panel {
+      border: 1px solid #ffcc00;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #ffcc00 !important;
+      padding: 10px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #ffcc00;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  </style>
+</head>
+<body>
+
+<!ADDED FOR PRETTYNESS>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#mySpace">WSIL?</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Station Occupancy Rates</a></li>
+        <li><a href="../density-map">Crowd Flow</a></li>
+        <li><a href="#portfolio">About WSIL</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id = "mySpace" class="jumbotron text-center">
+  <h1>When Should I Leave?</h1>
+  <p>Smart monitoring for smoother commutes</p>
+  <div>
+  <div class="row">
+  <form action="../transit"  method="post">
+    <div class="input-group" style="width:800px; margin:0 auto;">
+      <input type="form-control" name="source" id="source" class="form-control" size="15" placeholder="From:" required>
+      <input type="form-control" name="destination" id="destination" class="form-control" size="15" placeholder="To:" required>
+      <br>
+      <h6> ... </h6>
+      <button type="submit" class="btn btn-default btn-lg">Search</button>
+ </div>
+
+
+  </form>
+  </div>
+</div>
+
+
+<body>  <!this is the yellow space>
+<h1>  <h1>
+<h1>   <h1>
+
+</h1></h1>
+<body>
+</div>
+
+
+<!-- First Container -->
+<div id ="about" class="container-fluid bg-1 text-center">
+  <h1 class="margin">Station Occupancy Rates</h1>
+  <div style="text-align:center;padding:900em, 900em;color: white; padding-bottom: 1em">
+  <h3><a style="text-decoration:none; color:white" >
+  <span style="color:white;">
+   </span>
+   </a>
+  <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Europe%2FMadrid" width="300" height="125" frameborder="0" seamless></iframe>
+  </span>
+  </h3>
+  </div>
+
+  <!okay EXPERIMENT TIME>
+
+<div class="panel-body">
+<div class="table-responsive ">
+<table class="table table-bordered table-hover" id="dataTables-example" style="background-color:orange">
+<!-- This is the header section of the table -->
+<thead>
+<tr>
+<th><center>Station Name</th>
+<th><center>Line</th>
+<th><center>Platform Occupancy Rate</th>
+<th><center>Train Occupancy Rate</th>
+<th><center>Estimated Delay Time</th>
+</tr>
+</thead>
+<!-- End of table header -->
+<tbody>
+<!-- This is the start of first row of the table -->
+<tr>
+<td>Av. Tibidabo</td>
+<td>L7</td>
+<td>15%</td>
+<td>0%</td>
+<td>No Delay</td>
+</tr>
+<!-- End of first row (copy and paste this block to append additional rows -->
+<tr>
+<td>El Putxet</td>
+<td>L7</td>
+<td>27%</td>
+<td>8%</td>
+<td>No Delay</td>
+</tr>
+<!-- Paste additional rows here -->
+<tr>
+<td>Padua</td>
+<td>L7</td>
+<td>45%</td>
+<td>30%</td>
+<td>No Delay</td>
+</tr>
+<!-- Paste additional rows here -->
+<tr>
+<td>Pl. Molina</td>
+<td>L7</td>
+<td>62%</td>
+<td>79%</td>
+<td>1 train; 4 Mins</td>
+</tr>
+<!-- Paste additional rows here -->
+<tr>
+<td>Gracia</td>
+<td>L7</td>
+<td>78%</td>
+<td>94%</td>
+<td>3 trains; 12 Mins</td>
+</tr>
+<!-- Paste additional rows here -->
+<tr>
+<td>Provenca</td>
+<td>L7</td>
+<td>67%</td>
+<td>82%</td>
+<td>2 trains; 8 Mins</td>
+</tr>
+<!-- Paste additional rows here -->
+<tr>
+<td>Catalunya</td>
+<td>L7</td>
+<td>30%</td>
+<td>92%</td>
+<td>No Delay</td>
+</tr>
+<!-- Paste additional rows here -->
+</tbody>
+</table>
+</div>
+</div>
+
+
+<!END OF EXPERIMENT>
+
+<body>  <!this is the yellow space> <body>
+</div>
+</div>
+
+<!-- Second Container -->
+<div id ="services" class="container-fluid bg-2 text-center">
+  <h2 class="margin">Where are the people?</h2>
+    <p>Our density heat map is built through scraping social networking sites for geotags and online activity.</p>
+    <p>We believe that in an ever-connected world, this gives us a good guage of where people are.</p>
+    <a href="../density-map"><button class="btn btn-default btn-lg">Density Map</button></a>
+<!-- Add Google Maps -->
+
+  <! output density marker>
+
+</div>
+
+<!-- Third Container (Grid) -->
+<div id="portfolio" class="container-fluid bg-3 text-center">
+  <h2 class="margin">About <u>WSIL? </u></h2>
+  <h6>When Should I Leave (WSIL?) is a web tool created to help ease commuter traffic, geolocate dense hotspots and help future planning. Whether it be to avoid rush hour or to head towards the hottest new bar in town, WSIL? helps give users vital decision-making information.</h6>
+
+  <h6> Created by a team of four hackers, WSIL? specifically targets the problems caused by peak hour congestion and concentrated pedestrian flow. Often, accidents occur during rush hours when public areas are denser due to greater foot traffic[1], especially in cities where a significant percentage of the population utilises public transport [2].
+
+  <br>
+
+  As an idea, WSIL? is scalable. When implemented with working city Smart-sensors, WSIL? would be better able to provide traffic flow maps in real-time, and adjust predictions by taking into account weather conditions, seasonal tourism, and organised events.
+
+  It is hoped that with the widespread use of WSIL? overground pedestrian density would be better moderated, decreasing the likelihood of accidents whilst allowing users to better optimise their time.
+</h6>
+<h6>
+
+  [1] Moradi A, Soori H, Kavousi A, Eshghabadi F, Jamshidi E. Arch Trauma Res. 2016 Dec; 5(4):e30796. Epub 2016 Aug 17.
+<br>
+  [2] Reynolds CC, Harris MA, Teschke K, Cripton PA, Winters M. Environ Health. 2009 Oct 21; 8:47. Epub 2009 Oct 21.
+  </h6>
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="myFoot" class="container-fluid bg-4 text-center">
+ <!--<a href="#myFoot" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a> -->
+  <p>A proud hack idea by NotFromBarcelona @ HackUPC2017</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myFoot']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+    function init() {
+        var source = document.getElementById('source');
+        var dest = document.getElementById('destination');
+        var autocompletesrc = new google.maps.places.Autocomplete(source);
+        var autocompletedest = new google.maps.places.Autocomplete(dest);
+    }
+    google.maps.event.addDomListener(window, 'load', init);
+    function reverseFields(){
+        var source = document.getElementById('source').value;
+        var dest = document.getElementById('destination').value;
+        console.log(source,dest)
+        document.getElementById("source").value = dest;
+        document.getElementById("destination").value = source;
+    }
+</script>
+
+</body>
+</html>
