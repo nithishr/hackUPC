@@ -16,4 +16,4 @@ requests==2.18.4
 schedule==0.4.3
 scikit-learn==0.19.0
 urllib3==1.22
-Werkzeug==0.12.2
+Werkzeug==0.15.3
